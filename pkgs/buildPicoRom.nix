@@ -5,6 +5,7 @@
   stdenv,
 
   cmake,
+  gnumake,
   gcc-arm-embedded,
   picotool,
   python3,
@@ -36,6 +37,7 @@
       inherit pname version;
 
       nativeBuildInputs = [
+        gnumake
         cmake
         gcc-arm-embedded
         picotool
